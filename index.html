@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spaceship Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="interface">
+    <!-- Interactive Star Map -->
+    <div class="panel star-map">
+      <h2>Star Map</h2>
+      <canvas id="starMapCanvas"></canvas>
+    </div>
+
+    <!-- System Monitoring Dashboard -->
+    <div class="panel system-monitor">
+      <h2>System Monitoring</h2>
+      <div class="stats">
+        <div class="stat">
+          <label>Fuel:</label>
+          <div class="progress-bar" data-level="85"></div>
+        </div>
+        <div class="stat">
+          <label>Oxygen:</label>
+          <div class="progress-bar" data-level="72"></div>
+        </div>
+        <div class="stat">
+          <label>Shields:</label>
+          <div class="progress-bar" data-level="65"></div>
+        </div>
+        
+        <div class="stat">
+          <label>Ammo:</label>
+          <div class="progress-bar" data-level="95"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Mission Timeline -->
+    <div class="panel mission-timeline">
+      <h2>Mission Timeline</h2>
+      <ul id="timeline">
+        <li><span class="time">08:00 AM</span> Launch</li>
+        <li><span class="time">09:30 AM</span> Orbit Achieved</li>
+        <li><span class="time">11:15 AM</span> Docking</li>
+        <li><span class="time">14:00 AM</span> New Destination</li>
+
+      </ul>
+    </div>
+
+    <div class="panel mission-timeline">
+      <h2>Communication Log</h2>
+      <ul id="timeline">
+        <li><span class="time">07:00 AM</span> 1st Tranmission</li>
+        <li><span class="time">08:30 AM</span> 2nd Tranmission</li>
+        <li><span class="time">11:33 AM</span> 3rd Tranmission</li>
+        <li><span class="time">13:00 AM</span> 4th Tranmission</li>
+
+      </ul>
+    </div>
+
+    <div class="panel system-monitor">
+      <h2>Weapons Systems</h2>
+      <div class="stats">
+        <div class="stat">
+          <label>Torpedos</label>
+          <div class="progress-bar" data-level="85"></div>
+        </div>
+        <div class="stat">
+          <label>Lasers</label>
+          <div class="progress-bar" data-level="72"></div>
+        </div>
+        <div class="stat">
+          <label>Shields:</label>
+          <div class="progress-bar" data-level="65"></div>
+        </div>
+        
+        <div class="stat">
+          <label>Ammo:</label>
+          <div class="progress-bar" data-level="95"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel mission-timeline">
+      <h2>Event Log</h2>
+      <ul id="timeline">
+        <li><span class="time">07:00 AM</span> Mars base reached</li>
+        <li><span class="time">08:30 AM</span> Cargo loaded</li>
+        <li><span class="time">11:33 AM</span> Payment Received</li>
+        <li><span class="time">13:00 AM</span> Ship Maintenance</li>
+
+      </ul>
+    </div>
+
+    <button class="panel button">Fire</button>
+    <button class="panel button">Accelerate</button>
+    <button class="panel button">Decelerate</button>
+  
+
+
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
